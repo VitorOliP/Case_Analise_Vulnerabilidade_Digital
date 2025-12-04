@@ -18,7 +18,7 @@ st.divider()
 @st.cache_resource
 def carregar_modelo():
     try:
-        return joblib.load('model.joblib')
+        return joblib.load('./model/model.joblib')
     except:
         st.error("Erro: Arquivo 'model.joblib' não encontrado.")
         return None
